@@ -1,0 +1,21 @@
+<div class="example-container">
+    <mat-form-field appearance="fill">
+      <mat-label>FirstName</mat-label>
+      <input #firstName matInput >
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+      <mat-label>LastName</mat-label>
+      <input #lastName  matInput>
+    </mat-form-field>
+    <br>
+    <mat-form-field appearance="fill">
+      <mat-label>password</mat-label>
+      <input #password matInput type="password" >
+    </mat-form-field>
+    <br>
+    <button mat-raised-button (click)="authService.login(firstName.value,lastName.value,password.value)">LogIn</button>
+  </div>
+
+
+  <!--  -->
